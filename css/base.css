@@ -621,6 +621,9 @@ section#copyright {
 .icon-ruby:before {
   content: "\e900";
 }
+.icon-css:before {
+  content: "\e649";
+}
 .icon-elixir:before {
   content: "\f113";
 }
