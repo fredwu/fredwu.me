@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Fred Wu's Blog | Freelance Ruby on Rails, PHP, Front-end, UI Web Developer in Melbourne, Australia</title>
+  <link rel="stylesheet" href="css/reset-and-grid.css" type="text/css" media="all">
+  <link rel="stylesheet" href="lib/fancybox/jquery.fancybox.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="lib/tipsy/jquery.tipsy.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="lib/rainbow/themes/twilight.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="css/base.css" type="text/css" media="all">
+
+  <link rel="shortcut icon" href="fredwu.ico" type="image/x-icon" />
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+  <script type="text/javascript">
+    var IE7_PNG_SUFFIX = '.png';
+  </script>
+
+  <!--[if lt IE 9]>
+    <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+  <![endif]-->
+
+  <meta name="author" content="Fred Wu">
+</head>
+
+<body>
+
+<section id="header">
+  <div class="container_12">
+    <a id="page-top" name="page-top">&nbsp;</a>
+    <header>
+      <h1 class="push_2"><a href="/">Hi, I'm Fred Wu. I build web stuff with passion!</a></h1>
+      <nav>
+        <ul id="social-icons" class="grid_5">
+          <li class="social-linkedin"><a href="http://www.linkedin.com/in/wufred" target="_blank" title="LinkedIn profile">LinkedIn profile</a></li>
+          <li class="social-github"><a href="https://github.com/fredwu" target="_blank" title="GitHub profile">GitHub profile</a></li>
+          <li class="social-twitter"><a href="http://twitter.com/fredwu" target="_blank" title="Follow me on Twitter">Follow me on Twitter</a></li>
+          <li class="social-googleplus"><a href="https://plus.google.com/u/0/107047299686731979443" target="_blank" title="Google+ profile">Google+ profile</a></li>
+          <li class="social-forrst"><a href="http://forr.st/-fredwu" target="_blank" title="Forrst profile">Forrst profile</a></li>
+          <li class="social-tumblr"><a href="http://www.tumblr.com/follow/ifredwu" target="_blank" title="Follow me on Tumblr">Follow me on Tumblr</a></li>
+          <li class="social-rss"><a href="http://feeds.feedburner.com/fredwu" target="_blank" title="RSS subscription">RSS subscription</a></li>
+          <li class="social-email"><a href="http://feedburner.google.com/fb/a/mailverify?uri=fredwu&loc=en_US" target="_blank" title="Email subscription">Email subscription</a></li>
+        </ul>
+      </nav>
+      <div id="character" class="push_9">&nbsp;</div>
+      <div id="avatar" href="#page-about">
+        <a id="about-me-link" href="#page-about">About Me</a>
+        <div id="avatar-inner"></div>
+      </div>
+    </header>
+  </div>
+  <div id="grass"></div>
+</section>
+
+<section id="search">
+  <div class="container_12">
+    <form action="/search" method="get">
+      <label for="search-keywords" class="push_1">Search</label>
+      <input id="search-keywords" class="push_8" type="text" name="q" value="">
+    </form>
+  </div>
+</section>
+
+<section id="content">
+  <div class="container_12">
+    <ul class="pagination">
+      <li class="older-posts grid_3"><a href="/">Back to Home</a></li>
+    </ul>
+
+    <section class="post">
+      <article class="grid_9">
+        <h1>
+          <span class="post-title-link" title="External link"></span>
+          <a href="#">Lorem Ipsum Dolor Sit Amet</a>
+        </h1>
+        <p>Lorem ipsum dolor sit amet, <a href="#">consectetur adipiscing elit</a>. Donec ut lorem sed dui vehicula egestas. <code>Phasellus diam justo</code>, imperdiet eget vestibulum nec, ultricies vel felis. Nunc ac mi sapien, laoreet lacinia quam. In egestas faucibus turpis, in sagittis nunc mattis eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eros nulla, facilisis vitae lobortis et, porttitor vitae odio. Maecenas mauris metus, semper ut ultricies at, dictum eu odio.</p>
+        <ol>
+          <li>Lorem ipsum <em>dolor sit</em> amet</li>
+          <li>Lorem ipsum dolor <strong>sit amet</strong></li>
+        </ol>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut lorem sed dui vehicula egestas. Phasellus diam justo, imperdiet eget vestibulum nec, ultricies vel felis. Nunc ac mi sapien, laoreet lacinia quam. In egestas faucibus turpis, in sagittis nunc mattis eget. Lorem ipsum dolor sit amet.</p>
+        <pre><code>echo "yoyoyo";</code></pre>
+        <ul>
+          <li>Lorem ipsum <em>dolor sit</em> amet</li>
+          <li>Lorem ipsum dolor <strong>sit amet</strong></li>
+        </ul>
+        <pre class="brush: ruby">
+          # in spec_helper.rb
+          SimpleCov.start 'rails' do
+            add_group 'Changed' do |source_file|
+              `git ls-files --exclude-standard --others \
+                && git diff --name-only \
+                && git diff --name-only --cached`.split("\n").detect do |filename|
+                source_file.filename.ends_with?(filename)
+              end
+            end
+          end
+        </pre>
+        <pre><code data-language="ruby"># in spec_helper.rb
+# => "CREATE TABLE `ironmans` (\n  `id` int(11) NOT NULL AUTO_INCREMENT,\n  `created_at` datetime NOT NULL,\n  `updated_at` datetime NOT NULL,\n  `attack_power` int(11) NOT NULL,\n  PRIMARY KEY (`id`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;\n\n"
+SimpleCov.start 'rails' do
+  add_group 'Changed' do |source_file|
+    `git ls-files --exclude-standard --others \
+      && git diff --name-only \
+      && git diff --name-only --cached`.split("\n").detect do |filename|
+      source_file.filename.ends_with?(filename)
+    end
+  end
+end</code></pre>
+        <p class="post-more"><a href="#">Read more ...</a></p>
+      </article>
+      <aside class="grid_3">
+        <h3 class="post-date">JAN 1, 2012</h3>
+        <ul class="post-meta">
+          <li><a href="#">No comments</a></li>
+          <li><a href="#">No notes</a></li>
+        </ul>
+
+        <h3>share</h3>
+        <section class="share-buttons">
+          <g:plusone href="{Permalink}"></g:plusone>
+        </section>
+
+        <h3>tags</h3>
+        <ul class="post-tags">
+          <li><a href="#">some</a></li>
+          <li><a href="#">random</a></li>
+          <li><a href="#">tags</a></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="post">
+      <article class="grid_9">
+        <div class="post-image">
+          <a class="view-high-res" href="#"><img src="images/lotus.jpg" width="500px"></a>
+        </div>
+        <div class="post-caption"><p>This is a lotus. (Caption)</p></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut lorem sed dui vehicula egestas.</p>
+        <div class="post-image">
+          <a href="http://fredwu.me/photo/1280/416856948/1/tumblr_kyjcc4mYEC1qb7ot5"><img src="images/lotus.jpg" width="300px"></a>
+        </div>
+      </article>
+      <aside class="grid_3">
+        <h3 class="post-date">JAN 1, 2012</h3>
+        <ul class="post-meta">
+          <li><a href="#">No comments</a></li>
+          <li><a href="#">No notes</a></li>
+        </ul>
+
+        <h3>share</h3>
+        <section class="share-buttons">
+          <g:plusone href="{Permalink}"></g:plusone>
+        </section>
+
+        <h3>tags</h3>
+        <ul class="post-tags">
+          <li><a href="#">some</a></li>
+          <li><a href="#">random</a></li>
+          <li><a href="#">tags</a></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="post">
+      <article class="grid_9">
+        <blockquote class="grid_9">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut lorem sed dui vehicula egestas.</p>
+        </blockquote>
+        <div class="clear"></div>
+        <p class="post-quote-author grid_3 push_5">- Fred Wu</p>
+      </article>
+      <aside class="grid_3">
+        <h3 class="post-date">JAN 1, 2012</h3>
+        <ul class="post-meta">
+          <li><a href="#">No comments</a></li>
+          <li><a href="#">No notes</a></li>
+        </ul>
+
+        <h3>share</h3>
+        <section class="share-buttons">
+          <g:plusone href="{Permalink}"></g:plusone>
+        </section>
+
+        <h3>tags</h3>
+        <ul class="post-tags">
+          <li><a href="#">some</a></li>
+          <li><a href="#">random</a></li>
+          <li><a href="#">tags</a></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="post">
+      <article class="grid_9">
+        <h1><a href="#">Lorem Ipsum Dolor Sit Amet</a></h1>
+        <div class="post-chat">
+          <p class="odd"><span>Person A: </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut lorem sed dui vehicula egestas.</p>
+          <p class="even"><span>Person B: </span>Lorem ipsum dolor sit amet. Donec ut lorem sed dui vehicula egestas.</p>
+          <p class="odd"><span>Person A: </span>Donec ut lorem sed dui vehicula egestas.</p>
+          <p class="even"><span>Person B: </span>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+      </article>
+      <aside class="grid_3">
+        <h3 class="post-date">JAN 1, 2012</h3>
+        <ul class="post-meta">
+          <li><a href="#">No comments</a></li>
+          <li><a href="#">No notes</a></li>
+        </ul>
+
+        <h3>share</h3>
+        <section class="share-buttons">
+          <g:plusone href="{Permalink}"></g:plusone>
+        </section>
+
+        <h3>tags</h3>
+        <ul class="post-tags">
+          <li><a href="#">some</a></li>
+          <li><a href="#">random</a></li>
+          <li><a href="#">tags</a></li>
+        </ul>
+      </aside>
+    </section>
+
+    <section class="post">
+      <article class="grid_9">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut lorem sed dui vehicula egestas. Phasellus diam justo, imperdiet eget vestibulum nec, ultricies vel felis. Nunc ac mi sapien, laoreet lacinia quam. In egestas faucibus turpis, in sagittis nunc mattis eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eros nulla, facilisis vitae lobortis et, porttitor vitae odio. Maecenas mauris metus, semper ut ultricies at, dictum eu odio.</p>
+      </article>
+      <aside class="grid_3">
+        <h3 class="post-date">JAN 1, 2012</h3>
+        <ul class="post-meta">
+          <li><a href="#">No comments</a></li>
+          <li><a href="#">No notes</a></li>
+        </ul>
+
+        <h3>share</h3>
+        <section class="share-buttons">
+          <g:plusone href="{Permalink}"></g:plusone>
+        </section>
+
+        <h3>tags</h3>
+        <ul class="post-tags">
+          <li><a href="#">some</a></li>
+          <li><a href="#">random</a></li>
+          <li><a href="#">tags</a></li>
+        </ul>
+      </aside>
+    </section>
+
+    <ul class="pagination">
+      <li class="older-posts grid_3"><a href="/">Older Posts</a></li>
+      <li class="newer-posts grid_3 push_2">Newer Posts</li>
+    </ul>
+  </div>
+
+  <a id="page-about" href="#">&nbsp;</a>
+</section>
+
+<section id="footer">
+  <div class="container_12">
+    <div id="character-head"></div>
+    <a id="back-to-top" href="#page-top" title="Back to top">Back to top</a>
+
+    <section id="about-me" class="grid_5">
+      <h2>About Me</h2>
+
+      <h3>Fred Wu</h3>
+      <h4>Located in Melbourne, Australia, I currently work as a development team lead at <a href="http://locomote.com.au/" target="_blank">Locomote</a>.</h4>
+
+      <div class="clear"></div>
+
+      <p>
+        Grew up in Shanghai, China, I quickly became interested in computers and the Internet at the age of 13.
+        I started off by creating simple websites using basic HTML I learnt from reading computer magazines.
+        Later on I worked in online publishing, marketing and web hosting while studying in high school.
+        After being a 'webmaster' for a few years, I began my career in web development and design.
+        I studied Bachelor of Information Technology and Systems at
+        <a href="http://www.monash.edu.au/" target="_blank">Monash University</a> in Melbourne, Australia.
+        I worked as a web developer at places such as <a href="http://envato.com/" target="_blank">Envato</a>,
+        <a href="http://www.playup.com/">PlayUp</a> and <a href="http://sitepoint.com/">SitePoint</a> before joining <a href="http://locomote.com.au/" target="_blank">Locomote</a>.
+      </p>
+
+      <p>
+        <img src="img/img-photographer.jpg" width="376" height="96" />
+      </p>
+
+      <p>
+        I am primarily a Ruby and PHP developer as well as a front-end/UI developer.
+        In my spare time I also try to do as much creative designs as I could in order to keep my design skills polished.
+        I also focus strongly on user experience and user interface design.
+      </p>
+
+      <p>
+        <img src="img/img-focus.jpg" width="376" height="56" />
+      </p>
+
+      <p>
+        I am a passionate <a href="https://github.com/fredwu" target="_blank">open source developer</a>
+        who contributes to many of the projects on <a href="https://github.com/" target="_blank">GitHub</a>,
+        including <a href="http://contributors.rubyonrails.org/contributors/fred-wu/commits" target="_blank">Ruby on Rails</a>.
+      </p>
+
+      <p>
+        Please feel free to
+        <a href="&#x6d;&#97;&#x69;&#108;&#x74;&#111;&#58;&#x69;&#102;&#114;&#101;&#100;&#x77;&#117;&#x40;&#x67;&#x6d;&#x61;&#105;&#x6c;&#x2e;&#99;&#x6f;&#109;">shoot me an email</a>
+        if you would like to get in touch.
+        I am also happy to provide estimates and consultancy to any web based projects.
+        You may write to me in English or in Chinese. :)
+      </p>
+    </section>
+
+    <section id="my-projects" class="grid_7">
+      <h2>My Open Source Projects</h2>
+
+      <p>I am the author of the following open source projects.</p>
+
+      <ul>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/fredwu/action_throttler" target="_blank">Action Throttler</a> - Throttle actions based on configurable duration and limit.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/fredwu/amaze_hands" target="_blank">Amaze Hands</a> - An amazing tool developed for analysing Kanban board cards.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/fredwu/angel_nest" target="_blank">Angel Nest</a> - An open source 'clone' of <a href="http://angel.co/" target="_blank">AngelList</a>.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/fredwu/api_taster" target="_blank">API Taster</a> - Visually test your Rails application's API.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/fredwu/app_reset" target="_blank">AppReset</a> - Resets (and if available, seeds) your databases.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/fredwu/bustle" target="_blank">Bustle</a> - Activities recording and retrieving using a simple Pub/Sub-like interface.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/fredwu/datamappify" target="_blank">Datamappify</a> - Compose, decouple and manage domain logic and data persistence.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/fredwu/haml2slim" target="_blank">Haml2Slim</a> - Convert Haml templates to Slim templates.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/fredwu/inherited_resources_views" target="_blank">Inherited Resources Views</a> - DRY your view files!</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/fredwu/ruby_decorators" target="_blank">Ruby Decorators</a> - Ruby method decorators inspired by Python.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/fredwu/security_guard" target="_blank">Security Guard</a> - A collection of useful tools for auditing data.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/fredwu/ruby-slim-tmbundle" target="_blank">Slim Bundle</a> - A Textmate / Sublime Text bundle for Slim.</li>
+        <li><span class="icon-php"></span> <a href="https://github.com/fredwu/authlite" target="_blank">Authlite</a> - A lightweight, flexible Auth module for <a href="http://kohanaframework.org/" target="_blank">Kohana</a>.</li>
+        <li><span class="icon-php"></span> <a href="https://github.com/fredwu/kthrottler" target="_blank">KThrottler</a> - Throttle actions based on configurable duration and limit.</li>
+        <li><span class="icon-php"></span> <a href="https://github.com/fredwu/kohana-phamlp" target="_blank">PHamlP</a> - A bridge between <a href="http://kohanaframework.org/" target="_blank">Kohana</a> and <a href="http://code.google.com/p/phamlp/" target="_blank">PHamlP</a>.</li>
+        <li><span class="icon-js"></span> <a href="https://github.com/fredwu/jquery-endless-scroll" target="_blank">Endless Scroll</a> - Endless / infinite scrolling solution for <a href="http://jquery.com/" target="_blank">jQuery</a>.</li>
+        <li><span class="icon-js"></span> <a href="https://github.com/fredwu/jquery-inline-confirmation" target="_blank">Inline Confirmation</a> - Less obtrusive confirmation dialogues.</li>
+        <li><span class="icon-js"></span> <a href="https://github.com/fredwu/jqstub" target="_blank">JQStub</a> - A simple stub library for jQuery / Zepto objects.</li>
+        <li><span class="icon-js"></span> <a href="https://github.com/fredwu/skinny-coffee-machine" target="_blank">Skinny Coffee Machine</a> - A simple state machine with observers.</li>
+        <li><span class="icon-js"></span> <a href="https://github.com/fredwu/jquery-slideshow-lite" target="_blank">Slideshow Lite</a> - A lightweight slideshow plugin for <a href="http://jquery.com/" target="_blank">jQuery</a>.</li>
+      </ul>
+
+      <p>I am the co-author of the following open source projects.</p>
+
+      <ul>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/railsjedi/rails_config" target="_blank">RailsConfig</a> - Easiest way to add multi-environment yaml settings to Rails 3.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/stonean/slim" target="_blank">Slim</a> - A template language similar to <a href="http://haml-lang.com/" target="_blank">Haml</a>.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/fredwu/ssync" target="_blank">Ssync</a> - An optimised S3 sync tool using the power of Unix!</li>
+      </ul>
+
+      <p>I also made contribution to the following open source projects.</p>
+
+      <ul>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/neerajdotname/admin_data" target="_blank">Admin Data</a> - Rails plugin - browse and manage your data using browser.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/cjbottaro/app_config" target="_blank">App Config</a> - Rails plugin that provides application configuration.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/charliesome/better_errors" target="_blank">Better Errors</a> - Better error page for Rack apps.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/doabit/bootstrap-sass-extras" target="_blank">Bootstrap::Sass::Extras</a> - Bootstrap SASS extras.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/jeroenvandijk/capybara-mechanize" target="_blank">Capybara-mechanize</a> - Mechanize driver for Capybara.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/jnicklas/carrierwave" target="_blank">Carrierwave</a> - File uploads solution for <a href="http://rack.rubyforge.org/" target="_blank">Rack</a>, <a href="http://rubyonrails.org/" target="_blank">Rails</a>, <a href="http://www.merbivore.com/" target="_blank">Merb</a> and <a href="http://www.sinatrarb.com/" target="_blank">Sinatra</a>.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/plataformatec/devise" target="_blank">Devise</a> - Flexible authentication solution for Rails with <a href="https://github.com/hassox/warden" target="_blank">Warden</a>.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/collectiveidea/delayed_job" target="_blank">Delayed Job</a> - Database based asynchronously priority queue system.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/meskyanichi/deployer" target="_blank">Deployer</a> - Simplify the deployment of Ruby on Rails applications.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/apotonick/hooks" target="_blank">Hooks</a> - Generic hooks with callbacks for Ruby.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/josevalim/inherited_resources" target="_blank">Inherited Resources</a> - Making controllers inherit all restful actions.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/lotus" target="_blank">Lotus</a> - A complete web framework for Ruby.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/ianwhite/orm_adapter" target="_blank">ORM Adapter</a> - Provides a single point of entry for popular ruby ORMs.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/grosser/parallel" target="_blank">Parallel</a> - Ruby: parallel processing made simple and fast.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/grosser/parallel_tests" target="_blank">Parallel Tests</a> - 2x Testing Speed for RSpec, Test::Unit and Cucumber.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/rails/rails" target="_blank">Ruby on Rails</a> - <a href="http://rubyonrails.org/" target="_blank">Web development that doesn't hurt</a>.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/kfaustino/rails-templater" target="_blank">Rails Templater</a> - Template generator for Ruby on Rails 3 applications.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/filtersquad/rocket_pants" target="_blank">Rocket Pants</a> - API building tools on top of ActionController.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/rails/sass-rails" target="_blank">Sass Rails</a> - Ruby on Rails stylesheet engine for Sass.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/cavalle/steak" target="_blank">Steak</a> - Minimalist acceptance testing on top of RSpec.</li>
+        <li><span class="icon-ruby"></span> <a href="https://github.com/ddollar/textmate" target="_blank">Textmate</a> - Command-line package manager for the <a href="http://macromates.com/" target="_blank">Textmate editor</a>.</li>
+        <li><span class="icon-php"></span> <a href="https://github.com/kohana/core" target="_blank">Kohana</a> - An elegant HMVC PHP 5 framework.</li>
+        <li><span class="icon-php"></span> <a href="https://github.com/lussumo/Garden" target="_blank">Vanilla</a> - An open source discussion forum for the web.</li>
+        <li><span class="icon-php"></span> <a href="http://www.yiiframework.com/" target="_blank">Yii Framework</a> - A high performance PHP framework.</li>
+        <li><span class="icon-js"></span> <a href="https://github.com/meltingice/ajax-chosen" target="_blank">Ajax-Chosen</a> - A complement to jQuery Chosen that adds ajax autocomplete.</li>
+        <li><span class="icon-js"></span> <a href="https://github.com/wuyuntao/jquery-autosuggest" target="_blank">AutoSuggest</a> - Turn regular text input boxes into auto-complete boxes.</li>
+      </ul>
+    </section>
+  </div>
+</section>
+
+<section id="copyright">
+  <div class="container_12">
+    <ul id="social-icons-footer">
+      <li class="social-linkedin"><a href="http://www.linkedin.com/in/wufred" target="_blank" title="LinkedIn profile">LinkedIn profile</a></li>
+      <li class="social-github"><a href="https://github.com/fredwu" target="_blank" title="GitHub profile">GitHub profile</a></li>
+      <li class="social-twitter"><a href="http://twitter.com/fredwu" target="_blank" title="Follow me on Twitter">Follow me on Twitter</a></li>
+      <li class="social-googleplus"><a href="https://plus.google.com/u/0/107047299686731979443" target="_blank" title="Google+ profile">Google+ profile</a></li>
+      <li class="social-forrst"><a href="http://forr.st/-fredwu" target="_blank" title="Forrst profile">Forrst profile</a></li>
+      <li class="social-tumblr"><a href="http://www.tumblr.com/follow/ifredwu" target="_blank" title="Follow me on Tumblr">Follow me on Tumblr</a></li>
+      <li class="social-rss"><a href="http://feeds.feedburner.com/fredwu" target="_blank" title="RSS subscription">RSS subscription</a></li>
+      <li class="social-email"><a href="http://feedburner.google.com/fb/a/mailverify?uri=fredwu&loc=en_US" target="_blank" title="Email subscription">Email subscription</a></li>
+    </ul>
+    <p>
+      Web Development, Web Design, Entrepreneurship<br>
+      <span>Copyright &copy; 2010-2014, Fred Wu</span>
+    </p>
+  </div>
+</section>
+
+<script type="text/javascript" src="lib/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="lib/tipsy/jquery.tipsy.js"></script>
+<script type="text/javascript" src="lib/rainbow/js/rainbow.min.js"></script>
+<script type="text/javascript" src="lib/rainbow/js/language/generic.js"></script>
+<script type="text/javascript" src="lib/rainbow/js/language/html.js"></script>
+<script type="text/javascript" src="lib/rainbow/js/language/css.js"></script>
+<script type="text/javascript" src="lib/rainbow/js/language/ruby.js"></script>
+<script type="text/javascript" src="lib/rainbow/js/language/python.js"></script>
+<script type="text/javascript" src="lib/rainbow/js/language/php.js"></script>
+<script type="text/javascript" src="lib/rainbow/js/language/javascript.js"></script>
+<script type="text/javascript" src="lib/rainbow/js/language/coffeescript.js"></script>
+<script type="text/javascript" src="lib/rainbow/js/language/shell.js"></script>
+<script type="text/javascript" src="js/base.js"></script>
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4ef83e4a5e81896c"></script>
+
+</body>
+
+</html>
