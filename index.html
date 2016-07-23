@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="css/reset-and-grid.css" type="text/css" media="all">
   <link rel="stylesheet" href="lib/fancybox/jquery.fancybox.css" type="text/css" media="screen">
   <link rel="stylesheet" href="lib/tipsy/jquery.tipsy.css" type="text/css" media="screen">
-  <link rel="stylesheet" href="lib/rainbow/themes/twilight.css" type="text/css" media="screen">
+  <link rel="stylesheet" href="lib/prism/prism.css" type="text/css" media="screen">
   <link rel="stylesheet" href="css/base.css" type="text/css" media="all">
 
   <link rel="shortcut icon" href="fredwu.ico" type="image/x-icon" />
@@ -85,19 +85,17 @@
           <li>Lorem ipsum <em>dolor sit</em> amet</li>
           <li>Lorem ipsum dolor <strong>sit amet</strong></li>
         </ul>
-        <pre class="brush: ruby">
-          # in spec_helper.rb
-          SimpleCov.start 'rails' do
-            add_group 'Changed' do |source_file|
-              `git ls-files --exclude-standard --others \
-                && git diff --name-only \
-                && git diff --name-only --cached`.split("\n").detect do |filename|
-                source_file.filename.ends_with?(filename)
-              end
-            end
-          end
-        </pre>
-        <pre><code data-language="ruby"># in spec_helper.rb
+        <pre><code class="language-ruby"># in spec_helper.rb
+SimpleCov.start 'rails' do
+  add_group 'Changed' do |source_file|
+    `git ls-files --exclude-standard --others \
+      && git diff --name-only \
+      && git diff --name-only --cached`.split("\n").detect do |filename|
+      source_file.filename.ends_with?(filename)
+    end
+  end
+end</code></pre>
+        <pre><code class="language-ruby"># in spec_helper.rb
 # => "CREATE TABLE `ironmans` (\n  `id` int(11) NOT NULL AUTO_INCREMENT,\n  `created_at` datetime NOT NULL,\n  `updated_at` datetime NOT NULL,\n  `attack_power` int(11) NOT NULL,\n  PRIMARY KEY (`id`)\n) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;\n\n"
 SimpleCov.start 'rails' do
   add_group 'Changed' do |source_file|
@@ -417,16 +415,7 @@ end</code></pre>
 
 <script type="text/javascript" src="lib/fancybox/jquery.fancybox.pack.js"></script>
 <script type="text/javascript" src="lib/tipsy/jquery.tipsy.js"></script>
-<script type="text/javascript" src="lib/rainbow/js/rainbow.min.js"></script>
-<script type="text/javascript" src="lib/rainbow/js/language/generic.js"></script>
-<script type="text/javascript" src="lib/rainbow/js/language/html.js"></script>
-<script type="text/javascript" src="lib/rainbow/js/language/css.js"></script>
-<script type="text/javascript" src="lib/rainbow/js/language/ruby.js"></script>
-<script type="text/javascript" src="lib/rainbow/js/language/python.js"></script>
-<script type="text/javascript" src="lib/rainbow/js/language/php.js"></script>
-<script type="text/javascript" src="lib/rainbow/js/language/javascript.js"></script>
-<script type="text/javascript" src="lib/rainbow/js/language/coffeescript.js"></script>
-<script type="text/javascript" src="lib/rainbow/js/language/shell.js"></script>
+<script type="text/javascript" src="lib/prism/prism.js"></script>
 <script type="text/javascript" src="js/base.js"></script>
 <script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-4ef83e4a5e81896c"></script>
 
