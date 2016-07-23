@@ -49,6 +49,13 @@ a:hover {
   text-decoration: underline;
 }
 
+ul li ul,
+ul li ol,
+ol li ul,
+ol li ol {
+  margin-bottom: 0;
+}
+
 table {
   width: 100%;
   max-width: 100%;
