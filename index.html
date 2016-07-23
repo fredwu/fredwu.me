@@ -106,6 +106,26 @@ SimpleCov.start 'rails' do
     end
   end
 end</code></pre>
+<pre><code class="language-elixir">defmodule SimpleBayes.Blah.Blah.Tokenizer do
+  @doc """
+  Converts a list with a value into a map.
+
+  ## Examples
+
+      iex> SimpleBayes.Tokenizer.map_values([:cat, :dog], 1)
+      %{cat: 1, dog: 1}
+
+      iex> SimpleBayes.Tokenizer.map_values([:cat, :cat, :dog], 1)
+      %{cat: 2, dog: 1}
+  """
+  def map_values(list, value) do
+    Enum.reduce(list, %{}, fn (k, acc) ->
+      v = if acc[k], do: value + acc[k], else: value
+
+      Map.put(acc, k, v)
+    end)
+  end
+end</code></pre>
         <p class="post-more"><a href="#">Read more ...</a></p>
       </article>
       <aside class="grid_3">
@@ -419,6 +439,7 @@ end</code></pre>
 <script type="text/javascript" src="lib/rainbow/js/language/generic.js"></script>
 <script type="text/javascript" src="lib/rainbow/js/language/html.js"></script>
 <script type="text/javascript" src="lib/rainbow/js/language/css.js"></script>
+<script type="text/javascript" src="lib/rainbow/js/language/elixir.js"></script>
 <script type="text/javascript" src="lib/rainbow/js/language/ruby.js"></script>
 <script type="text/javascript" src="lib/rainbow/js/language/python.js"></script>
 <script type="text/javascript" src="lib/rainbow/js/language/php.js"></script>
